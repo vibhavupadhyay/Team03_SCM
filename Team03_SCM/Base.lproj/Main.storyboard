@@ -49,9 +49,16 @@
                         <viewLayoutGuide key="safeArea" id="3gq-VO-bBv"/>
                         <color key="backgroundColor" red="0.45138680930000002" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="sz2-5k-pKj"/>
+                    <navigationItem key="navigationItem" id="sz2-5k-pKj">
+                        <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="Yab-un-Rhs">
+                            <connections>
+                                <segue destination="Z96-oW-LKp" kind="unwind" unwindAction="unwindToMainWithUnwindSegue:" id="xpq-UT-r9f"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2aA-b6-gEq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Z96-oW-LKp" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1869.4656488549617" y="-2.1126760563380285"/>
         </scene>
